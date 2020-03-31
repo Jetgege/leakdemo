@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Desktop/leakmen/leakdemo.h
+stdio.h
+-
+
+D:/Desktop/leakmen/main.c
+stdio.h
+-
+leakdemo.h
+D:/Desktop/leakmen/leakdemo.h
+
